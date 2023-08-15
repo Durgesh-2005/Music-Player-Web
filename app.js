@@ -155,6 +155,11 @@ const songs = [
         songName: ` Gang Leader<br><div class="subtitle"> Anirudh Ravichander</div>`,
         poster: "https://c.saavncdn.com/663/Gang-Leader-Telugu-2019-20190905102749-500x500.jpg",
     },
+    {
+        id: "31",
+        songName: ` Movements<br><div class="subtitle"> Pham,Yung Fusion</div>`,
+        poster: "https://c.saavncdn.com/277/Movements-feat-Yung-Fusion-Single-English-2015-500x500.jpg",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i) => {

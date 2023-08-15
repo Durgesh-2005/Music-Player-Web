@@ -6,6 +6,45 @@ const popular_songs = document.getElementById("popular_song");
 const spanElement = discover.querySelector("span");
 const myLibContent = document.getElementById("my-lib-content");
 const radioContent = document.getElementById("Radio-content");
+/*Menu Bar Buttons*/
+const recommendedBtn = document.getElementById('recommendedBtn');
+const topPicksBtn = document.getElementById('topPicks');
+const podcastBtn = document.getElementById('podcast');
+/*Menu Recommended Songs */
+const recommendedSongs = document.getElementById("recommended-songs");
+const topPickSongs = document.getElementById("topPickSongs");
+const podcast = document.getElementById("podcast-cont");
+
+recommendedBtn.addEventListener('click', () => {
+    recommendedBtn.classList.add('active');
+    topPicksBtn.classList.remove('active');
+    podcastBtn.classList.remove('active');
+    recommendedSongs.style.display="block";
+    topPickSongs.style.display="none"
+    podcast.style.display="none"
+
+});
+
+topPicksBtn.addEventListener('click', () => {
+    recommendedBtn.classList.remove('active');
+    topPicksBtn.classList.add('active');
+    podcastBtn.classList.remove('active');
+    recommendedSongs.style.display="none"
+    topPickSongs.style.display="block";
+    podcast.style.display="none"
+
+});
+
+podcastBtn.addEventListener('click', () => {
+    recommendedBtn.classList.remove('active');
+    topPicksBtn.classList.remove('active');
+    podcastBtn.classList.add('active');
+    recommendedSongs.style.display="none";
+    topPickSongs.style.display="none"
+    podcast.style.display="block"
+
+});
+
 
 discover.addEventListener("click", function() {
   artists.style.display="block";

@@ -105,6 +105,56 @@ const songs = [
         songName: ` Megam Karukuthu<br><div class="subtitle">Dhanush,Anirudh Ravichander</div>`,
         poster: "https://c.saavncdn.com/238/Thiruchitrambalam-Tamil-2022-20220927091058-500x500.jpg",
     },
+    {
+        id: "21",
+        songName: ` Premisthunna<br><div class="subtitle"> Vijai Bulganin, P V N S Rohit</div>`,
+        poster: "https://c.saavncdn.com/732/Baby-Telugu-2023-20230710131123-500x500.jpg",
+    },
+    {
+        id: "22",
+        songName: ` O Rendu Prema Meghaalilla<br><div class="subtitle"> Vijai Bulganin,Sreeram Chandra</div>`,
+        poster: "https://c.saavncdn.com/732/Baby-Telugu-2023-20230710131123-500x500.jpg",
+    },
+    {
+        id: "23",
+        songName: ` Rao Gari abbai<br><div class="subtitle"> DSP</div>`,
+        poster: "https://c.saavncdn.com/358/Mr-Perfect-2011-500x500.jpg",
+    },
+    {
+        id: "24",
+        songName: ` Darshana<br><div class="subtitle"> Darshana Rajendran</div>`,
+        poster: "https://c.saavncdn.com/371/Hridayam-Malayalam-2021-20230803205617-500x500.jpg",
+    },
+    {
+        id: "25",
+        songName: ` Vaathi Raid<br><div class="subtitle"> Anirudh Ravichnader</div>`,
+        poster: "https://c.saavncdn.com/347/Master-Tamil-2020-20200316084627-500x500.jpg",
+    },
+    {
+        id: "26",
+        songName: ` Onakka Munthirir<br><div class="subtitle"> Divya Vineeth</div>`,
+        poster: "https://c.saavncdn.com/371/Hridayam-Malayalam-2021-20230803205617-500x500.jpg",
+    },
+    {
+        id: "27",
+        songName: ` Neruppa Daa<br><div class="subtitle"> Arunraja Kamaraj</div>`,
+        poster: "https://c.saavncdn.com/911/Kabali-Tamil-2016-20190506170305-500x500.jpg",
+    },
+    {
+        id: "28",
+        songName: ` Aakaasame Nee Haddhu Ra<br><div class="subtitle"> GV Prakash</div>`,
+        poster: "https://c.saavncdn.com/114/Aakaasam-Nee-Haddhu-Ra-Telugu-2020-20201111104315-500x500.jpg",
+    },
+    {
+        id: "29",
+        songName: ` Ori Devuda<br><div class="subtitle"> Anirudh Ravichander</div>`,
+        poster: "https://c.saavncdn.com/252/Raghuvaran-B-Tech-Telugu-2014-500x500.jpg",
+    },
+    {
+        id: "30",
+        songName: ` Gang Leader<br><div class="subtitle"> Anirudh Ravichander</div>`,
+        poster: "https://c.saavncdn.com/663/Gang-Leader-Telugu-2019-20190905102749-500x500.jpg",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i) => {

@@ -219,21 +219,21 @@
         <div class="song_side">
             <!--Simple Navigation-->
             <nav>
-                <ul>
-                    <li id="Discover">Discover <i class="bi bi-compass"></i><span></span></li>
-                    <li id="my-lib">MY LIBRARY <i class="bi bi-collection"></i></li>
-                    <li id="Radio">RADIO <i class="bi bi-broadcast-pin"></i></li>
-                </ul>
                 <div class="search">
 
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="Search Music...">
                 </div>
+                <ul>
+                    <li id="Discover">Discover <i class="bi bi-compass"></i><span></span></li>
+                    <li id="my-lib">MY LIBRARY <i class="bi bi-collection"></i></li>
+                    <li id="Radio">RADIO <i class="bi bi-broadcast-pin"></i></li>
+                </ul>
                 <div class="user">
-                <img class="Profile" src="./img/Durgesh.jpg" alt="User" title="Durgesh">
+                    <img class="Profile" src="./img/Durgesh.jpg" alt="User" title="Durgesh">
                 </div>
             </nav>
-            
+
             <!--Radio-->
             <div style="display: none;" id="Radio-content" class="Radio">
                 <div class="h4">
@@ -251,7 +251,7 @@
             <!--Discover POPULAR Songs-->
             <div id="popular_song" class="popular_song">
                 <div class="h4">
-                    <h4>Popular Song</h4>
+                    <h4>Popular Song <i class="bi bi-fire"></i></h4>
                     <div class="btn_s">
                         <i id="left_scroll" class="bi bi-arrow-left-short"></i>
                         <i id="right_scroll" class="bi bi-arrow-right-short"></i>
@@ -371,7 +371,7 @@
                 </div>
             </div>
             <!--My Library-->
-           <!-- <div style="display: none;" id="my-lib-content" class="library">
+            <div style="display: none;" id="my-lib-content" class="library">
                 <div class="h4">
                     <h4>My Library <i class="bi bi-collection"></i></h4>
                     <div class="btn_s">
@@ -380,60 +380,62 @@
                     </div>
                 </div>
                 <div class="lib-content-frame">
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
-                            <img src="https://i.scdn.co/image/ab67706f00000002409ab412c52113097c2f8d42" alt="Telugu">
-                            <i class="bi playListPlay bi-play-circle-fill" id="32"></i>
+                            <img id="teluguBtn" src="https://i.scdn.co/image/ab67706f00000002409ab412c52113097c2f8d42"
+                                alt="Telugu">
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
                         <h5>Latest Telugu
                             <br>
                             <div class="subtitle"> </div>
                         </h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
-                            <img src="https://i.scdn.co/image/ab67706f0000000251eb7d47276468cbe171bc64" alt="Hindi">
-                            <i class="bi playListPlay bi-play-circle-fill" id="33"></i>
+                            <img id="hindiBtn" src="https://i.scdn.co/image/ab67706f0000000251eb7d47276468cbe171bc64"
+                                alt="Hindi">
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
                         <h5>Bollywood sneaks
                             <br>
                             <div class="subtitle"> </div>
                         </h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
                             <img src="https://i.scdn.co/image/ab67706f000000025f39096d6d1e374143b5b2fd" alt="Tamil">
-                            <i class="bi playListPlay bi-play-circle-fill" id="34"></i>
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
-                        <h5>Latest Tamil 
+                        <h5>Latest Tamil
                             <br>
                             <div class="subtitle"> </div>
                         </h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
                             <img src="https://i.scdn.co/image/ab67706f000000022adb9e49f3955c4afcfae733" alt="Malayalam">
-                            <i class="bi playListPlay bi-play-circle-fill" id="35"></i>
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
                         <h5>Malayalam 2023
                             <br>
                             <div class="subtitle"> </div>
                         </h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
                             <img src="https://i.scdn.co/image/ab67706f0000000239764ddc6e9373987c0eb304" alt="Kannada">
-                            <i class="bi playListPlay bi-play-circle-fill" id="36"></i>
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
                         <h5>Latest Kannada
                             <br>
                             <div class="subtitle"> </div>
                         </h5>
                     </li>
-                    <li class="songItem">
+                    <li class="songItemlib">
                         <div class="img_play">
                             <img src="https://i.scdn.co/image/ab67706c0000da8402ac701799a64199eaee6eff" alt="English">
-                            <i class="bi playListPlay bi-play-circle-fill" id="37"></i>
+                            <i class="bi playListPlay bi-play-circle-fill"></i>
                         </div>
                         <h5>English Top 2023
                             <br>
@@ -441,7 +443,125 @@
                         </h5>
                     </li>
                 </div>
-            </div> -->
+            </div>
+            <!--Test Playlist-->
+            <div id="lib-playlist" style="display: none;" class="lib-playlist">
+                <div id="telugu-playlist" class="telugu">
+                    <h5>Latest Telugu</h5>
+                    <li class="songItemlib2">
+                        <span>01</span>
+                        <img src="https://c.saavncdn.com/212/Jagame-Thandhiram-Original-Motion-Picture-Soundtrack--Tamil-2021-20210607095427-500x500.jpg"
+                            alt="Alan">
+                        <h5>
+                            Rakita Rakita Rakita
+                            <div class="subtitle">Dhanush,Santhosh Narayanan</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>02</span>
+                        <img src="https://c.saavncdn.com/996/Saahasam-Swaasaga-Saagipo-Telugu-2016-500x500.jpg"
+                            alt="Vellipomake">
+                        <h5>
+                            Vellipomake
+                            <div class="subtitle">Sid Sriram</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>03</span>
+                        <img src="https://c.saavncdn.com/212/Jagame-Thandhiram-Original-Motion-Picture-Soundtrack--Tamil-2021-20210607095427-500x500.jpg"
+                            alt="Santhosh Narayanan">
+                        <h5>
+                            Bujji
+                            <div class="subtitle">Santhosh Narayanan</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>04</span>
+                        <img src="https://c.saavncdn.com/427/Kantara-Kannada-2022-20221205200722-500x500.jpg">
+                        <h5>
+                            Varaha Roopam
+                            <div class="subtitle">B.Ajaneesh Lokanath</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>05</span>
+                        <img src="https://c.saavncdn.com/280/Oopiri-Telugu-2016-500x500.jpg">
+                        <h5>
+                            Door Number Okati
+                            <div class="subtitle">Geetha Madhuri,Gopi</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>06</span>
+                        <img src="https://c.saavncdn.com/732/Baby-Telugu-2023-20230710131123-500x500.jpg">
+                        <h5>
+                            Premisthunna
+                            <div class="subtitle">Vijai Bulganin, P V N S Rohit</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="21"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>07</span>
+                        <img src="https://c.saavncdn.com/732/Baby-Telugu-2023-20230710131123-500x500.jpg">
+                        <h5>
+                            O Rendu Prema Meghaalilla
+                            <div class="subtitle">Vijai Bulganin,Sreeram Chandra</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="22"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>08</span>
+                        <img src="https://c.saavncdn.com/358/Mr-Perfect-2011-500x500.jpg">
+                        <h5>
+                            Rao Gari Abbai
+                            <div class="subtitle">DSP</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="23"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>09</span>
+                        <img
+                            src="https://c.saavncdn.com/114/Aakaasam-Nee-Haddhu-Ra-Telugu-2020-20201111104315-500x500.jpg">
+                        <h5>
+                            Aakaasame Nee Haddu Ra
+                            <div class="subtitle">GV Prakash</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="28"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>10</span>
+                        <img src="https://c.saavncdn.com/252/Raghuvaran-B-Tech-Telugu-2014-500x500.jpg">
+                        <h5>
+                            Ori Devuda
+                            <div class="subtitle">Anirudh Ravichander</div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="29"></i>
+                    </li>
+                    <li class="songItemlib2">
+                        <span>11</span>
+                        <img src="https://c.saavncdn.com/663/Gang-Leader-Telugu-2019-20190905102749-500x500.jpg">
+                        <h5>
+                            Gang Leader
+                            <div class="subtitle">Anirudh Ravichander/div>
+                        </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="30"></i>
+                    </li>
+
+                </div>
+                <div id="hindi-playlist" class="hindi">
+                    <h5>Latest Hindi</h5>
+                    <iframe style="border-radius:12px"
+                        src="https://open.spotify.com/embed/playlist/1qk7sHSUKBuKeDaMeTQqMY?utm_source=generator&theme=0"
+                        width="80%" height="352" frameBorder="0" allowfullscreen=""
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"></iframe>
+                </div>
+            </div>
             <!--Discover POPULAR Artists-->
             <div id="artists" class="popular_artists">
                 <div class="h4">

@@ -14,6 +14,14 @@ const podcastBtn = document.getElementById('podcast');
 const recommendedSongs = document.getElementById("recommended-songs");
 const topPickSongs = document.getElementById("topPickSongs");
 const podcast = document.getElementById("podcast-cont");
+/*Playlist Functions */
+const lib_playlist = document.getElementById("lib-playlist");
+const telugu = document.getElementById("telugu-playlist");
+const hindi = document.getElementById("hind-playlist");
+/*Playlist Btns */
+const teluguBtn = document.getElementById("teluguBtn");
+const hindiBtn = document.getElementById("hindiBtn");
+
 
 recommendedBtn.addEventListener('click', () => {
     recommendedBtn.classList.add('active');
@@ -51,6 +59,7 @@ discover.addEventListener("click", function() {
   popular_songs.style.display="block";
   myLibContent.style.display="none";
   radioContent.style.display="none";
+  lib_playlist.style.display="none"
   discover.style.color="#fff";
   myLib.style.color="#4c5262";
   radio.style.color="#4c5262";
@@ -67,6 +76,7 @@ myLib.addEventListener("click", function() {
   popular_songs.style.display="none"
   myLibContent.style.display="block";
   radioContent.style.display="none"
+  lib_playlist.style.display="none"
   myLib.style.color="#fff";
   discover.style.color="#4c5262";
   radio.style.color="#4c5262";
@@ -74,7 +84,6 @@ myLib.addEventListener("click", function() {
   myLib.appendChild(spanElement);
   discover.removeChild(spanElement);
   radio.removeChild(spanElement);
-  
   
 });
 
@@ -91,3 +100,26 @@ radio.addEventListener("click", function(){
   discover.removeChild(spanElement)
   myLib.removeChild(spanElement);
 });
+
+const libPlaylist = document.querySelector(".lib-playlist");
+const liElements = libPlaylist.querySelectorAll("li");
+
+teluguBtn.addEventListener("click", () => {
+  libPlaylist.style.display = "block";
+  telugu.style.display = "block";
+  hindi.style.display="none";
+});
+
+hindiBtn.addEventListener("click", () => {
+  libPlaylist.style.display = "block";
+  telugu.style.display = "none";
+  hindi.style.display="block";
+  
+});
+
+
+
+
+
+
+

@@ -160,6 +160,36 @@ const songs = [
         songName: ` Movements<br><div class="subtitle"> Pham,Yung Fusion</div>`,
         poster: "https://c.saavncdn.com/277/Movements-feat-Yung-Fusion-Single-English-2015-500x500.jpg",
     },
+    {
+        id: "32",
+        songName: ` Latest Telugu<br>`,
+        poster: "https://i.scdn.co/image/ab67706f00000002409ab412c52113097c2f8d42",
+    },
+    {
+        id: "33",
+        songName: ` Bollywood sneaks<br>`,
+        poster: "https://i.scdn.co/image/ab67706f0000000251eb7d47276468cbe171bc64",
+    },
+    {
+        id: "34",
+        songName: `Latest Tamil<br>`,
+        poster: "https://i.scdn.co/image/ab67706f000000025f39096d6d1e374143b5b2fd",
+    },
+    {
+        id: "35",
+        songName: ` Malayalam 2023<br>`,
+        poster: "https://i.scdn.co/image/ab67706f000000022adb9e49f3955c4afcfae733",
+    },
+    {
+        id: "36",
+        songName: ` Latest Kannada<br>`,
+        poster: "https://i.scdn.co/image/ab67706f0000000239764ddc6e9373987c0eb304",
+    },
+    {
+        id: "37",
+        songName: ` English Top 2023<br>`,
+        poster: "https://i.scdn.co/image/ab67706c0000da8402ac701799a64199eaee6eff",
+    },
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i) => {
